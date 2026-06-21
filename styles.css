@@ -576,6 +576,10 @@ nav {
     color: var(--text-light);
 }
 
+.th-short {
+    display: none;
+}
+
 /* ── Comparison Table ── */
 .comparison-table-wrapper {
     margin-top: 2rem;
@@ -1467,6 +1471,14 @@ footer > .footer-inner > .footer-logo {
 
     .comparison-table td span:not(.check):not(.cross):not(.on-request) {
         display: none;
+    }
+
+    .th-full {
+        display: none;
+    }
+
+    .th-short {
+        display: inline;
     }
 
     .roadmap-content h4 {
