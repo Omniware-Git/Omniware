@@ -671,15 +671,19 @@ nav {
 }
 
 .on-request {
-    display: inline-block;
-    font-size: 0.7rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
     font-weight: 600;
+    font-style: italic;
     color: var(--accent);
     background: #eff6ff;
-    padding: 0.25rem 0.6rem;
-    border-radius: 100px;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
+    border-radius: 50%;
+    cursor: help;
+    font-family: Georgia, serif;
 }
 
 .cross {
