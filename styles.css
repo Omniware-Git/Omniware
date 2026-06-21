@@ -1141,9 +1141,12 @@ footer > .footer-inner > .footer-logo {
         font-size: 1.75rem;
     }
 
-    .about-intro,
+    .about-intro {
+        padding: 2rem 0 0;
+    }
+
     .about-values {
-        padding: 3rem 0;
+        padding: 2rem 0 3rem;
     }
 
     .approach-grid,
