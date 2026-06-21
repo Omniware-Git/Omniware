@@ -1364,14 +1364,11 @@ footer > .footer-inner > .footer-logo {
     }
 
     .on-request {
-        font-size: 0 !important;
+        font-size: 0;
         line-height: 0;
         padding: 0;
         width: 22px;
         height: 22px;
-        max-width: 22px;
-        max-height: 22px;
-        overflow: hidden;
         text-indent: -9999px;
         border-radius: 50%;
         background: var(--accent);
@@ -1380,6 +1377,22 @@ footer > .footer-inner > .footer-logo {
         justify-content: center;
         position: relative;
         margin: 0 auto;
+    }
+
+    .on-request.on-request-show {
+        width: auto;
+        height: auto;
+        font-size: 0.6rem;
+        line-height: 1;
+        padding: 0.3rem 0.5rem;
+        text-indent: 0;
+        background: var(--accent);
+        color: #fff;
+    }
+
+    .on-request.on-request-show::before,
+    .on-request.on-request-show::after {
+        display: none;
     }
 
     .on-request::before {
