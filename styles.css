@@ -1321,7 +1321,56 @@ footer > .footer-inner > .footer-logo {
     }
 
     .comparison-table {
-        min-width: 560px;
+        min-width: 420px;
+    }
+
+    .comparison-table thead th {
+        font-size: 0.8rem;
+        padding: 1rem 0.75rem;
+    }
+
+    .comparison-table tbody tr:not(.comparison-group) td {
+        padding: 0.75rem;
+    }
+
+    .comparison-table td strong {
+        font-size: 0.8rem;
+    }
+
+    .comparison-table td span:not(.check):not(.cross):not(.on-request) {
+        font-size: 0.7rem;
+    }
+
+    .comparison-group td {
+        font-size: 0.65rem;
+        padding: 0.75rem;
+    }
+
+    .check, .cross {
+        width: 24px;
+        height: 24px;
+        font-size: 0.75rem;
+    }
+
+    .on-request {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .roadmap-content h4 {
+        font-size: 1rem;
+    }
+
+    .roadmap-content p {
+        font-size: 0.85rem;
+    }
+
+    .track-header h3 {
+        font-size: 1.15rem;
+    }
+
+    .track-subtitle {
+        font-size: 0.8rem;
     }
 
     .table-intro h3 {
