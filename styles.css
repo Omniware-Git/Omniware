@@ -680,6 +680,8 @@ nav {
     border-radius: 100px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .cross {
