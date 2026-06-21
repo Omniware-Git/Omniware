@@ -674,8 +674,8 @@ nav {
     display: inline-block;
     font-size: 0.7rem;
     font-weight: 600;
-    color: #fff;
-    background: var(--accent);
+    color: var(--accent);
+    background: #eff6ff;
     padding: 0.25rem 0.6rem;
     border-radius: 100px;
     text-transform: uppercase;
@@ -1366,32 +1366,33 @@ footer > .footer-inner > .footer-logo {
     .on-request {
         font-size: 0;
         padding: 0;
-        width: 28px;
-        height: 28px;
+        width: 24px;
+        height: 24px;
         border-radius: 50%;
         background: var(--accent);
         display: inline-flex;
         align-items: center;
         justify-content: center;
         position: relative;
+        margin: 0 auto;
     }
 
     .on-request::before {
         content: "";
-        width: 4px;
-        height: 4px;
+        width: 3px;
+        height: 3px;
         background: #fff;
         border-radius: 50%;
         position: absolute;
-        top: 6px;
+        top: 5px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .on-request::after {
         content: "";
-        width: 3px;
-        height: 9px;
+        width: 2.5px;
+        height: 7px;
         background: #fff;
         border-radius: 1px;
         position: absolute;
