@@ -674,8 +674,8 @@ nav {
     display: inline-block;
     font-size: 0.7rem;
     font-weight: 600;
-    color: var(--accent);
-    background: #eff6ff;
+    color: #fff;
+    background: var(--accent);
     padding: 0.25rem 0.6rem;
     border-radius: 100px;
     text-transform: uppercase;
