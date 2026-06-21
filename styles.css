@@ -76,6 +76,23 @@ nav {
     color: var(--primary);
 }
 
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+}
+
 /* ── Hero ── */
 .hero {
     position: relative;
@@ -1206,11 +1223,11 @@ footer > .footer-inner > .footer-logo {
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.25rem;
+        font-size: 2rem;
     }
 
     .hero-sub {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .hero-content {
@@ -1218,14 +1235,30 @@ footer > .footer-inner > .footer-logo {
     }
 
     nav {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
         padding: 1rem 1.5rem;
     }
 
+    .nav-toggle {
+        display: flex;
+    }
+
     .nav-links {
-        gap: 1.5rem;
-        font-size: 0.85rem;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--bg);
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-links.nav-open {
+        display: flex;
     }
 
     .control-grid {
@@ -1250,7 +1283,7 @@ footer > .footer-inner > .footer-logo {
     }
 
     .about-content h2,
-    .contact-text h2 {
+    .contact-centered h2 {
         font-size: 1.5rem;
     }
 
@@ -1258,7 +1291,49 @@ footer > .footer-inner > .footer-logo {
     .capabilities,
     .about,
     .contact {
-        padding: 4rem 0;
+        padding: 3rem 0;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-cta {
+        width: 100%;
+        text-align: center;
+        max-width: 280px;
+    }
+
+    .trust-bar {
+        text-align: center;
+    }
+
+    .trust-bar-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .comparison-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .comparison-table {
+        min-width: 560px;
+    }
+
+    .table-intro h3 {
+        font-size: 1.25rem;
+    }
+
+    .how-it-works-sub h3 {
+        font-size: 1.5rem;
+    }
+
+    .control-section h3 {
+        font-size: 1.35rem;
     }
 
     .footer-grid {
