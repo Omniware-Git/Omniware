@@ -671,42 +671,15 @@ nav {
 }
 
 .on-request {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    font-size: 0;
-    background: var(--accent);
-    border-radius: 50%;
-    cursor: help;
-    position: relative;
-}
-
-.on-request::before {
-    content: "";
-    display: block;
-    width: 4px;
-    height: 4px;
-    background: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 7px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.on-request::after {
-    content: "";
-    display: block;
-    width: 3px;
-    height: 9px;
-    background: #fff;
-    border-radius: 1px;
-    position: absolute;
-    bottom: 6px;
-    left: 50%;
-    transform: translateX(-50%);
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: #eff6ff;
+    padding: 0.25rem 0.6rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 .cross {
@@ -1391,8 +1364,40 @@ footer > .footer-inner > .footer-logo {
     }
 
     .on-request {
-        font-size: 0.6rem;
-        padding: 0.2rem 0.4rem;
+        font-size: 0;
+        padding: 0;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--accent);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .on-request::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .on-request::after {
+        content: "";
+        width: 3px;
+        height: 9px;
+        background: #fff;
+        border-radius: 1px;
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .comparison-table td span:not(.check):not(.cross):not(.on-request) {
