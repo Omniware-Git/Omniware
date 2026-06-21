@@ -1130,17 +1130,30 @@ footer > .footer-inner > .footer-logo {
 
 @media (max-width: 768px) {
     .about-hero {
-        padding: 8rem 0 3rem;
+        padding: 6rem 0 2rem;
     }
 
     .about-hero h1 {
         font-size: 1.75rem;
     }
 
+    .about-intro,
+    .about-values {
+        padding: 3rem 0;
+    }
+
     .approach-grid,
     .values-grid,
     .company-grid {
         grid-template-columns: 1fr;
+    }
+
+    .about-intro-grid {
+        gap: 2rem;
+    }
+
+    .values-grid {
+        gap: 1rem;
     }
 }
 
