@@ -676,14 +676,33 @@ nav {
     justify-content: center;
     width: 28px;
     height: 28px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    font-style: italic;
-    color: var(--accent);
-    background: #eff6ff;
+    font-size: 0;
+    background: var(--accent);
     border-radius: 50%;
     cursor: help;
-    font-family: Georgia, serif;
+    position: relative;
+}
+
+.on-request::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+}
+
+.on-request::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 9px;
+    background: #fff;
+    border-radius: 1px;
+    position: absolute;
+    bottom: 6px;
 }
 
 .cross {
