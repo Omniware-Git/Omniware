@@ -1357,6 +1357,10 @@ footer > .footer-inner > .footer-logo {
         padding: 0.2rem 0.4rem;
     }
 
+    .comparison-table td span:not(.check):not(.cross):not(.on-request) {
+        display: none;
+    }
+
     .roadmap-content h4 {
         font-size: 1rem;
     }
