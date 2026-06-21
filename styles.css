@@ -1364,10 +1364,15 @@ footer > .footer-inner > .footer-logo {
     }
 
     .on-request {
-        font-size: 0;
+        font-size: 0 !important;
+        line-height: 0;
         padding: 0;
-        width: 24px;
-        height: 24px;
+        width: 22px;
+        height: 22px;
+        max-width: 22px;
+        max-height: 22px;
+        overflow: hidden;
+        text-indent: -9999px;
         border-radius: 50%;
         background: var(--accent);
         display: inline-flex;
